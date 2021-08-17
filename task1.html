@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .main-container{
+            width: 100%;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            min-width:300px;
+            width:40%;
+            min-height:80vh;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px grey ;
+            
+        }
+        .heading-title{
+            line-height:0px;
+    
+        }
+        .heading{
+            padding-left: 10px;
+        }
+        .quote{
+
+        }
+       
+        p{
+            padding: 10px;
+        }
+        
+        form{
+            margin: 15px;
+
+        }
+        /* css for form first row */
+        .first-row{
+           display:flex;
+           justify-content:space-between;  
+        }
+        .first-name{
+            width:47%;
+            height: 35px;
+            border-radius: 5px;
+             border: 1px solid grey;
+        }
+         /* css for  form first row end */
+         /* css for second row */
+        .number{
+             width:98%;
+             height: 35px;
+             border-radius: 5px;
+             border: 1px solid grey;
+        }
+        .password{
+            width:98%;
+            height:35px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+         /* css of date of birth */
+        .day{
+            display :flex;
+            justify-content: space-between;
+        }
+        .date-of-birth{
+            width:32%;
+            height:35px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        .button{
+            display :flex;
+            justify-content: center;
+        }
+        button{
+            padding: 10px;
+            width:40%;
+            color:white;
+            background-color:rgb(22, 156, 18);
+            border:1px solid rgb(22, 156, 18);
+            border-radius: 5px; 
+        }
+        input{
+            background-color: rgb(253, 253, 253);
+            padding-left:10px;
+        }
+        .gender-container{
+            display:flex;
+            justify-content:space-between;
+        }
+        .gender{
+            border: 1px solid grey;
+            border-radius: 5px;
+            width:32%; 
+            height:35px;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            padding-left: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+    <div class="container">
+        <div class="heading-title">
+            <h1 class="heading">Sign Up</h1>
+            <p class="quote">It's quick and easy.</p>
+        </div>
+        <hr>
+        <form>
+            <div class="first-row">
+                <input type="text" name="first name" placeholder="first name" class="first-name">
+                <input type="text" name="last name" placeholder="last name" class="first-name">
+            </div> <br> 
+            
+            <div class="second-row">
+                <input type="text" name="email or mobile" placeholder="email or mobile number" class="number">
+            </div><br>
+            <div class="third-row">
+                <input type="password" name="password" placeholder="New password" class="password">
+            </div><br> 
+        
+            <label > Date of Birth</label><br><br>
+           
+            <div class="day">
+                 <!-- for day -->
+                <select class="date-of-birth"> 
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            <!-- for month -->
+         <select class="date-of-birth">
+            <option value="jan">Jan</option>
+            <option value="feb">Feb</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="jun">Jun</option>
+            <option value="july">July</option>
+            <option value="aug">Aug</option>
+            <option value="sep">Sep</option>
+            <option value="oct">Oct</option>
+            <option value="nav">Nav</option>
+            <option value="dec">Dec</option>
+        </select>
+        <!-- for year -->
+        <select class="date-of-birth">
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+        </select>
+            </div><br>
+         <label >Gender</label><br><br>
+            <div class="gender-container">
+                <div class="gender">
+                    <label >female</label >
+                  <input type="radio" name="gender" value="female">
+           </div>
+          <div class="gender">
+              <label >male</label>
+           <input type="radio" name="gender" value="male">
+          </div>
+           <div class="gender">
+              <label >custom</label>
+              <input type="radio" name="gender" value="custom">
+           </div>
+            </div>
+         <p>By clicking Sign Up, you agree to our Terms , Data Policy and Cookie Policy. We may send you SMS notifications. You can opt out to stop receiving them whenever you want</p>
+         <div class="button">
+            <button>Sign Up</button>
+         </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
