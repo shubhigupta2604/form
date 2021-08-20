@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0px;
+        }
+        .main-container{
+            width:100%;
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width:800px;
+        }
+        .form-header{
+            height:5vh;
+            background-color:darkorange;
+        }
+        h3{
+            padding:10px;
+            color:yellow;
+        }
+        table{
+            width: 800px;
+            height:80vh;
+            border: 1px solid black;
+            background-color:rgb(8, 8, 58);
+        }
+        .td1{
+            width:30%;
+            text-align:right;
+            color:yellow;
+        }
+        .td2{
+            width:20px;      
+        }
+        .td3{
+            width:60%;
+        }
+        .form-ele{
+            width:98%;
+            height:35px;
+            border-radius: 5px;
+        }
+        .DOB{
+            width:98%;
+           
+            display:flex;
+            justify-content:space-between;
+        }
+        .month{
+            width:25%;
+            height:35px;
+            border-radius: 5px;
+        }
+        .day{
+            width: 15%;
+            height:35px;
+            border-radius: 5px;
+        }
+        .year{
+            width:20%;
+            height:35px;
+            border-radius: 5px;
+        }
+        label{
+             color:yellow;
+        } 
+        .form-footer{
+            display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            height:10vh;
+            background-color:darkorange; 
+        }
+        button{
+            width:20%;
+            height:5vh;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+        .submit{
+            background-color:green;
+            color:white;
+        }
+        .cancel{
+            background-color:red;
+            color:white;
+        }
+        </style>
+</head>
+<body>
+    <div class="main-container">
+    <div class="container">
+        <div class="form-header">
+            <h3>Sign Up</h3>
+        </div>
+       <form> 
+        <table>
+        <tbody>
+            <tr>
+                <td class="td1"> <label for="frist"> Frist Name </label></td>
+                <td class="td2"></td>
+                <td class="td3"><input type="text" id="frist" name="fristname" class="form-ele" placeholder="Enter Frist Name..." required /></td>
+            </tr>
+            <tr>
+                <td class="td1">Second Name</td>
+                <td class="td2"></td>
+                <td class="td3"><input type="text" name="secondname" class="form-ele" placeholder="Enter Second Name..." required /></td>
+            </tr>
+            <tr>
+                <td class="td1">Screen Name</td>
+                <td class="td2"></td>
+                <td class="td3"><input type="text" name="screenname" class="form-ele" placeholder="Enter screen Name..." required /></td>
+            </tr>
+            <tr>
+                <td class="td1">Date of Birth</td>
+                <td class="td2"></td>
+                <td class="DOB"> 
+                    <select name="month" class="month" required>
+                        <option value="">-month-</option>
+                        <option value="jan">JAN</option>
+                        <option value="feb">Feb</option>
+                    </select>
+                    <select name="day" class="day" required>
+                        <option value="">-day-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <select name="year" class="year" required>
+                        <option value="">-year-</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                 </td>
+            </tr>
+            <tr>
+                <td class="td1 ">Gender</td>
+                <td class="td2"></td>
+                <td class="td3">
+                    <input type="radio" id ="male"name="gender" required />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" />
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="td1 ">Country</td>
+                <td class="td2"></td>
+                <td class="td3">
+                    <select name="country" class="form-ele">
+                        <option value="india">India</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="td1 ">Email</td>
+                <td class="td2"></td>
+                <td class="td3"><input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" class="form-ele" placeholder="Enter Email..." required /></td>
+            </tr>
+            <tr>
+                <td class="td1 ">Phone</td>
+                <td class="td2"></td>
+                <td class="td3"><input type="tel" name="phone" class="form-ele" placeholder="Enter Phone..." required /></td>
+            </tr>
+            <tr>
+                <td class="td1 ">Password</td>
+                <td class="td2"></td>
+                <td class="td3"><input type="password" name="password" class="form-ele" required /></td>
+            </tr>
+            <tr>
+                <td class="td1 ">Confirm Password</td>
+                <td class="td2"></td>
+                <td class="td3"><input type="password" name="confirmpassword" class="form-ele" required /></td>
+            </tr>
+            <tr>
+                <td class="td1 "></td>
+                <td class="td2"></td>
+                <td class="td3">
+                    <input type="checkbox" id="clickit" name="term" >
+                    <label for="clickit">I agree to the Term of Use</label>
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+    <div class="form-footer">
+        <button class="submit">Submit</button>
+        <button type="reset" class="cancel">Cancel</button>
+    </div>
+</div>
+</div>
+</body>
+</html>

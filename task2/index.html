@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        .main-container {
+            width:100%;
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-first{
+          width: 40%;
+          border:2px solid black;
+          height: 90vh;
+          border: 80px;
+          background-color:white;
+           color: yellow;
+        }
+        .form-header{
+            height:5vh;
+            background-color:darkorange;
+        }
+        .form-body{
+            height:70vh;
+            background-color:rgb(9, 9, 56);
+            border:1px solid white;
+        }
+        
+        .form-footer{
+            display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            height:10vh;
+            background-color:darkorange; 
+        }
+        .firstname{
+            display:flex;
+            justify-content:flex-end;
+            
+        }
+        
+        lable{
+            width:25%;
+        }
+        input{
+            width:65%;
+            height:3vh;
+            border:1px solid white;
+            border-radius:5px;
+        }
+        select{
+            height:3vh;
+            width:20%;
+            border:1px solid white;
+            border-radius:5px;
+        }
+        button{
+            width:20%;
+            height:5vh;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+        .submit{
+            background-color:green;
+            color:white;
+        }
+        .cancel{
+            background-color:red;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class ="main-container">
+    <div class="container-first">
+         <div class="form-header">
+             <h3>Sign Up</h3>
+         </div>
+           <div class="form-body"> 
+                   <div class="firstname">
+               <lable>First name</lable>
+               <input type="text" name="fristname" placeholder="Enter Frist name..."><br><br>
+            </div>
+            <div class="firstname">
+               <lable>Last name</lable>
+               <input type="text" name="lastname" placeholder="Enter Last name..."><br><br>
+            </div>
+            <div class="firstname">
+               <lable>Screen name</lable>
+               <input type="text" name="lastname" placeholder="Enter Screen name..."><br><br>
+            </div>
+            <div class="firstname">
+               <lable>Date of Birth</lable>
+               <select>
+                <option value='jan'>Jan</option>
+                <option value='feb'>Feb</option>
+                <option value='mar'>Mar</option>
+                <option value='apr'>Apr</option>
+                <option value='may'>May</option>
+            </select>
+               <select>
+                   <option value='1'>1</option>
+                   <option value='2'>2</option>
+                   <option value='3'>3</option>
+                   <option value='4'>4</option>
+                   <option value='5'>5</option>
+               </select>
+               <select>
+                <option value='2000'>2004</option>
+                <option value='2001'>2003</option>
+                <option value='2002'>2002</option>
+                <option value='2003'>2001</option>
+                <option value='2004'>2000</option>
+            </select><br><br>
+            </div>
+            
+            <lable>Gender</lable>
+            <input type="radio" name="gender" value="male">
+            <label for="#">Male</label>
+            <input type="radio" name="gender" value="female">
+            <label for="#">Female</label><br><br>
+            <label>Country</label>
+            <select>
+                <option value='usa'>USA</option>
+                <option value='india'>India</option>
+                <option value='canada'>Canada</option>
+                <option value='france'>France</option>
+                <option value='Italy'>Italy</option>
+            </select><br><br>
+            <lable>E-mail</lable>
+               <input type="email" name="email" placeholder="Enter Email..."><br><br>
+               <lable>Phone</lable>
+               <input type="tel" name="number" placeholder="Enter Phone..."><br><br>
+               <lable>Password</lable>
+               <input type="Password" name="password"><br><br>
+               <lable>Confirm Password</lable>
+               <input type="password" name="confirmpassword"><br>
+               <input type="checkbox" name="condition">
+               <lable>I agree to Term of Use</lable>
+            </div>
+            <div class="form-footer">
+                <button class="submit">Submit</button>
+                <button type="reset" class="cancel">Cancel</button>
+
+            </div>       
+        </div>
+    </div>
+    
+</body>
+</html>
